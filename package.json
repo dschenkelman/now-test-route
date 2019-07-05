@@ -1,6 +1,6 @@
 {
   "name": "now-test-route",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A CLI to test if a URL path will match a route, a builder and a file based on a now.json file and a file system state",
   "main": "index.js",
   "scripts": {
