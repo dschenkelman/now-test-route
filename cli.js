@@ -31,7 +31,7 @@ const nowJson = require(nowJsonPath);
 const routeParams = argv._.join(" ");
 
 function matchedFileExists(match){
-  return fs.existsSync(path.join(rootPath, match));
+  return fs.existsSync(path.join(projectDir, match));
 }
 
 const result = test(routeParams, nowJson, matchedFileExists);
