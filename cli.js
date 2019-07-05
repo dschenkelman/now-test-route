@@ -29,7 +29,12 @@ if (argv.config) {
 
 const nowJson = require(nowJsonPath);
 const routeParams = argv._.join(" ");
-const result = test(routeParams, nowJson, projectDir);
+
+function matchedFileExists(match){
+  return fs.existsSync(path.join(rootPath, match));
+}
+
+const result = test(routeParams, nowJson, matchedFileExists);
 
 if (result.matchedBuilder && result.matchedFile) {
   if (result.fileFound) {

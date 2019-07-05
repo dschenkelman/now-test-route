@@ -4,7 +4,7 @@
   "description": "A CLI to test if a URL path will match a route, a builder and a file based on a now.json file and a file system state",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "now",
@@ -23,5 +23,8 @@
   },
   "bin": {
     "now-test-route": "./cli.js"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }
